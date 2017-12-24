@@ -1,3 +1,6 @@
-TMail Lite will be soon released
+TMail Lite beta released! :)
 
-Please take a look at premium version on CodeCanyon https://codecanyon.net/item/tmail-multi-domain-temporary-email-system/20177819
+Credits to php-imap v2.0.8 by barbushin (License: MIT)
+https://github.com/barbushin/php-imap
+
+Please take a look at premium version on CodeCanyon https://goo.gl/NHn6sy
