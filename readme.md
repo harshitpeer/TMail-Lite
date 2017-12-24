@@ -1,5 +1,7 @@
 TMail Lite beta released! :)
 
+Live Demo - http://tmail-lite.thehp.in/
+
 Credits to php-imap v2.0.8 by barbushin (License: MIT)
 https://github.com/barbushin/php-imap
 
