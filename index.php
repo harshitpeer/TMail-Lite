@@ -2,6 +2,13 @@
 require_once './config.php';
 require_once './PhpImap/__autoload.php';
 session_start();
+if(isset($_GET["action"])) {
+    if($_GET["action"] == "clear") {
+        session_destroy();
+        header("Location: ./");
+        die();
+    }
+}
 if(isset($_SESSION["address"])) {
     $address = $_SESSION["address"];
 } else {
@@ -64,6 +71,9 @@ if($unseen == 1) {
             <?php
         }
         ?>
+    </div>
+    <div class="container">
+        <a href="?action=clear"><button type="button" class="btn btn-warning">Get New Email</button></a>
     </div>
     <script>
         $( function() {
