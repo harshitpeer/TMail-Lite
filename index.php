@@ -29,7 +29,7 @@ $mailIdsTo = $mailbox->searchMailbox($toList);
 $mailIdsCc = $mailbox->searchMailbox($ccList);
 $mailIdsBcc = $mailbox->searchMailbox($bccList);
 $mailsIds = array_reverse(array_unique(array_merge($mailIdsTo,$mailIdsCc,$mailIdsBcc)));
-if($unseen == 1) {
+if(isset($unseen) && $unseen == 1) {
     $unseenIds = $mailbox->searchMailbox("UNSEEN");
     $mailsIds = array_intersect($mailsIds,$unseenIds);
 }
